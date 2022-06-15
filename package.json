@@ -2,7 +2,6 @@
   "name": "webtipper",
   "version": "0.1.0",
   "private": true,
-  "homepage": "github.com/samrock5000/",
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node scripts/start.js",
