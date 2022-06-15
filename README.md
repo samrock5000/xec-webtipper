@@ -3,8 +3,9 @@
 
 ## Running locally
 ```
-git clone git@github.com:rkalis/cashscript-playground.git
-cd cashscript-playground
+git clone https://github.com/samrock5000/xec-webtipper
+cd xec-webtipper
 yarn
 yarn start
+
 ```
