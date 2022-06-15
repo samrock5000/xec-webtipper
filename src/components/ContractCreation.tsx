@@ -39,7 +39,7 @@ const ContractCreation: React.FC<Props> = ({ artifact, contract, setContract, ne
   const [sig, setSig] = useState('')
   const [signerPk, setSignerPk] = useState('')
   const [signerPkh, setSignerPkh] = useState("")
-  const [polling, setPolling] = useState(setInterval(() => createContract(), 1000000))
+  const [polling, setPolling] = useState(setInterval(() => createContract(), 10000000))
   const [wif,setWif] = useState("")
   const [showWif, setShowWif] = useState(false)
   const [showQr, setShowQr] = useState(false)
