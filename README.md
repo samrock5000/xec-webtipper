@@ -1,5 +1,6 @@
 # eCash WebTipper
 
+demo: https://xec-webtipper.vercel.app/
 
 ## Running locally
 ```
