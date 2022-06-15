@@ -5,10 +5,14 @@ import { decodeCashAddress, decodeCashAddressFormatWithoutPrefix } from '@bitaut
 export const ColumnFlex = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  align-item:center
 `
 export const RowFlex = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content:center;
+  align-item:center
 `
 
 export interface Wallet {
@@ -35,10 +39,10 @@ export function readAsType(value: string, type: string) {
   } else if (type === 'bytes20') {
     let addressInfo;
 
-    if (value.startsWith('bitcoincash:') || value.startsWith('bchtest:')) {
+    if (value.startsWith('ecash:') || value.startsWith('ectest:')) {
       addressInfo = decodeCashAddress(value);
     } else if(value.startsWith('q') || value.startsWith('p')) {
-      addressInfo = decodeCashAddressFormatWithoutPrefix(value, ['bitcoincash', 'bchtest']);
+      addressInfo = decodeCashAddressFormatWithoutPrefix(value, ['ecash', 'ectest']);
     }
 
     if (addressInfo === undefined || typeof addressInfo === 'string') {
@@ -52,7 +56,8 @@ export function readAsType(value: string, type: string) {
 }
 
 export const ExplorerString = {
-  mainnet: 'https://explorer.bitcoin.com/bch',
+  // mainnet: 'https://explorer.bitcoin.com/bch',
+  mainnet: 'https://blockchair.com/ecash/transaction/',
   testnet: 'http://testnet.imaginary.cash',
   staging: 'https://testnet4.imaginary.cash/',
   regtest: ''

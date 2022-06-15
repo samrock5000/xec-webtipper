@@ -7,12 +7,12 @@ const Header: React.FC<Props> = () => {
     <header style={{
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       color: 'black',
       padding: '24px 44px',
       fontSize: '30px'
     }}>
-      <div className="header-title">CashScript Playground <strong><sup>Beta</sup></strong></div>
+      <div className="header-title">eCash<strong><sup> xec </sup></strong>webtipper</div>
     </header>
   )
 }
