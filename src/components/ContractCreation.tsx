@@ -173,9 +173,9 @@ const ContractCreation: React.FC<Props> = ({ artifact, contract, setContract, ne
         //     .then((response) =>  response.json());
        
         if (!newBalance) {       
-          console.log("not funded, constract balance:", newBalance)         
+          console.log("not funded, contract balance:", newBalance)         
         } else {          
-          console.log("funds detected, constract balance: ", newBalance)
+          console.log("funds detected, contract balance: ", newBalance)
 
           const sendTransaction = async () => {
             // balance = newContract.getBalance()
