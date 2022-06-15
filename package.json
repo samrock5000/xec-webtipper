@@ -28,7 +28,6 @@
     "@bitauth/libauth": "^1.17.1",
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
-    "@monaco-editor/react": "^3.6.2",
     "@svgr/webpack": "4.3.3",
     "@sambo5000/xec-js":"6.0.2",
     "@testing-library/jest-dom": "^4.2.4",
